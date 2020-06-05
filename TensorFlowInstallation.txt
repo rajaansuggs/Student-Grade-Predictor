@@ -1,0 +1,24 @@
+Jeff Heaton Tutorial Link: https://www.youtube.com/watch?v=MpUvdLD932c
+Jeff Heaton Github TensorFlow Yaml File Link: https://github.com/jeffheaton/t81_558_deep_learning/blob/master/tensorflow.yml
+1) Install the latest version MiniConda pkg
+2) Go to terminal and type conda install jupyter
+3) Download the environment setup script: go to Jeff Heaton github in google, go to deep learning link then find yaml or click 2nd link above
+Save the yaml file (with virtual environment of TensorFlow and dependencies) into rajaansuggs 
+4) type 'conda update --all' if environment not found
+5) type 'conda env create -f tensorflow.yml' into terminal
+6) Testing tensorflow environment:
+
+To activate this environment, use 
+$ conda activate tensorflow : The base prompt should change to tensorflow
+To deactivate an active environment, use
+$ conda deactivate
+
+7)>>python
+>>import tensorflow as tf
+>>print(tf.__version__)
+2.0.0
+quit()
+
+8) Create kernel inside jupyter so jupyter can find the kernel that you created
+python -m ipykernel install --user --name tensorflow --display-name "Python 3.7 (tensorflow)"
+jupyter notbook
